@@ -3,9 +3,9 @@ import Bankmanager from "./images/Bankmanager.jpg"
 import Footer from "./components/footer";
 import { Link } from 'react-router-dom'
 import { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faLightbulb, faPlug } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faHeart } from '@fortawesome/free-solid-svg-icons';
+// import { faLightbulb, faPlug } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [show, setShow] = useState(false);

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 const UsersCard = (props) => {
 
   const [showMore, setShowMore] = useState(false);
@@ -10,7 +11,7 @@ const UsersCard = (props) => {
   return (
     <div className="">
       <div className="card rounded-xl px-4 py-2 flex flex-row gap-4">
-        <img src={props.image} className="w-full h-80 " />
+        <img src={props.image} className="w-50 h-80 " />
 
         <div className="flex flex-col justify-center gap-1">
           <div className="flex flex-row gap-2">
@@ -50,12 +51,14 @@ const UsersCard = (props) => {
             </>
           )}
 
-          <button
+          {/* <button
             onClick={handleReadMore}
             className="bg-blue-500 text-white font-bold py-2 px-4 rounded-md mt-8"
           >
             {showMore ? "show Less" : "Read More"}
-          </button>
+          </button> */}
+
+          <Link to={`/users/${props.id}`}>Read more</Link>
         </div>
       </div>
     </div>
